@@ -3,6 +3,7 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 using Logging.Core;
 using System;
+using System.IO;
 
 namespace Nina.Selection
 {
