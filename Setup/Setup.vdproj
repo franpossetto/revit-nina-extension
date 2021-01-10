@@ -2914,24 +2914,6 @@
         "Entry"
         {
         "MsmKey" = "8:_89717BF0608ACC2B05B2B488A554D6D3"
-        "OwnerKey" = "8:_B3E6509640C745DBBD0F47A046749E1F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_89717BF0608ACC2B05B2B488A554D6D3"
-        "OwnerKey" = "8:_0627A967C10F4B0B8C67BA3A9CEFFCCE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_89717BF0608ACC2B05B2B488A554D6D3"
-        "OwnerKey" = "8:_AB5899C977074DF581736ADCF135D403"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_89717BF0608ACC2B05B2B488A554D6D3"
         "OwnerKey" = "8:_04F9EDB552524F55863A4A49083E052D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -4822,12 +4804,6 @@
         "Entry"
         {
         "MsmKey" = "8:_EE5E35A7794131B456E506B336606E74"
-        "OwnerKey" = "8:_F977A659DC3A78C43A47687031075FD4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EE5E35A7794131B456E506B336606E74"
         "OwnerKey" = "8:_1FC0A459C4E74B7A9FD764FBCA0CECC8"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -5105,24 +5081,6 @@
         {
         "MsmKey" = "8:_F88367B6088A14F965A7812120F96CC7"
         "OwnerKey" = "8:_B6D09F2C67324CFFBA8E6DD945C52D88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F977A659DC3A78C43A47687031075FD4"
-        "OwnerKey" = "8:_B6D09F2C67324CFFBA8E6DD945C52D88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F977A659DC3A78C43A47687031075FD4"
-        "OwnerKey" = "8:_04F9EDB552524F55863A4A49083E052D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F977A659DC3A78C43A47687031075FD4"
-        "OwnerKey" = "8:_78A25F057F7A4BC88B9E45CDE05EF7C9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -5591,42 +5549,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_B6D09F2C67324CFFBA8E6DD945C52D88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B3E6509640C745DBBD0F47A046749E1F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_09737E362FBD40D1A684EA1F7669230D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0627A967C10F4B0B8C67BA3A9CEFFCCE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_046097E74AB74C609737F26F9A217077"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AB5899C977074DF581736ADCF135D403"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3F077692B3D246258EEAF364F4335442"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -6568,12 +6490,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F977A659DC3A78C43A47687031075FD4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_3505A4EAFF90E005FD5668DD90711154"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -6883,11 +6799,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_046097E74AB74C609737F26F9A217077"
-                    {
-                    "Name" = "8:Serilog.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.dll"
             "TargetName" = "8:"
@@ -6976,11 +6887,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0627A967C10F4B0B8C67BA3A9CEFFCCE"
-                    {
-                    "Name" = "8:Serilog.Sinks.File.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.Sinks.File.dll"
             "TargetName" = "8:"
@@ -7069,11 +6975,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_09737E362FBD40D1A684EA1F7669230D"
-                    {
-                    "Name" = "8:Serilog.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.dll"
             "TargetName" = "8:"
@@ -8340,11 +8241,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3F077692B3D246258EEAF364F4335442"
-                    {
-                    "Name" = "8:Serilog.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.dll"
             "TargetName" = "8:"
@@ -10621,11 +10517,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_AB5899C977074DF581736ADCF135D403"
-                    {
-                    "Name" = "8:Serilog.Sinks.File.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.Sinks.File.dll"
             "TargetName" = "8:"
@@ -10838,11 +10729,6 @@
             "AssemblyAsmDisplayName" = "8:Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B3E6509640C745DBBD0F47A046749E1F"
-                    {
-                    "Name" = "8:Serilog.Sinks.File.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\Nina\\Dependencies\\Serilog.Sinks.File.dll"
             "TargetName" = "8:"
@@ -11881,37 +11767,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F977A659DC3A78C43A47687031075FD4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Loggify, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F977A659DC3A78C43A47687031075FD4"
-                    {
-                    "Name" = "8:Loggify.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Loggify.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_EBEA2C0D119D48209A2E9DA468361EC5"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F9E158595963C026EDD4361A5E22C615"
             {
             "AssemblyRegister" = "3:1"
@@ -12273,15 +12128,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Nina"
-        "ProductCode" = "8:{848EF3CA-919D-4F8F-BAF6-DAB08191D60A}"
-        "PackageCode" = "8:{10C6F2A0-D8A1-497F-9AE3-4E3F7DD53B76}"
+        "ProductCode" = "8:{88D9E474-D50B-4939-9827-6D7F3B704376}"
+        "PackageCode" = "8:{54FB9F3D-9175-4229-B262-2DBF712E8210}"
         "UpgradeCode" = "8:{C5102866-23FF-4EC2-B050-06185169D198}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.2.1"
         "Manufacturer" = "8:Default Company Name"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -12788,7 +12643,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_04F9EDB552524F55863A4A49083E052D"
             {
-            "SourcePath" = "8:..\\Nina\\obj\\R2019\\Nina.dll"
+            "SourcePath" = "8:..\\Nina\\obj\\R2018\\Nina.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EBEA2C0D119D48209A2E9DA468361EC5"
@@ -12900,7 +12755,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B6D09F2C67324CFFBA8E6DD945C52D88"
             {
-            "SourcePath" = "8:..\\Nina\\obj\\R2020\\Nina.dll"
+            "SourcePath" = "8:..\\Nina\\obj\\R2018\\Nina.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3A63AFCC6EEE4189974FCA79E6DAB42F"
