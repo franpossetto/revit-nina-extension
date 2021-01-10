@@ -22,7 +22,7 @@ namespace Nina
             PushButtonData pipe_byDimension_data = Ribbon
                 .CreatePushButtonData("pipe_byDimension", // button name
                                       "PipeType by Dimension", // name in Revit UI
-                                      "Nina.About"); //cmd
+                                      "Nina.Selection.PipeByDimension"); //cmd
 
             PushButtonData elementType_switch_up_data = Ribbon
                 .CreatePushButtonData("type_switch_up",

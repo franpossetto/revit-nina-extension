@@ -2,7 +2,7 @@
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 
-namespace Nina.Commands.Selection
+namespace Nina.Selection
 {
     [Transaction(TransactionMode.Manual)]
     public class PipeByDimension : IExternalCommand
