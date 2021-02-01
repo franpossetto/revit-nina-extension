@@ -37,7 +37,7 @@ namespace Nina
             # region Config Button
 
             PushButtonData settings_button_data = Ribbon
-                .CreatePushButtonData("settings", "Config", "Nina.Info.About");
+                .CreatePushButtonData("settings", "Config", "Nina.Info.Config");
 
             PushButton settings_button = ninaPanel.AddItem(settings_button_data) as PushButton;
             settings_button.LargeImage = Icons.settings_30;

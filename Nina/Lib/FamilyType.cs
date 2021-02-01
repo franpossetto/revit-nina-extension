@@ -14,6 +14,11 @@ namespace Nina.Revit
     {
         public static void SelectWall(UIDocument uiDoc, Document doc, double measure)
         {
+
+            bool exist= FamilyType.WallTypeExist(doc, measure);
+            exist = true;
+            if (exist) FamilyType.CreateWall(uiDoc, doc, measure);
+
             ElementClassFilter filter = new ElementClassFilter(typeof(WallType));
             FilteredElementCollector collector = new FilteredElementCollector(doc);
             collector.WherePasses(filter);
@@ -34,22 +39,54 @@ namespace Nina.Revit
                 }
             }
 
-            //WallType elementType = collector.Where(e => e.LookupParameter("Width").AsDouble() == measure).FirstOrDefault() as WallType;
-
-
             uiDoc.PostRequestForElementTypePlacement(wallType);
         }
 
         public static void CreateWall(UIDocument uiDoc, Document doc, double measure)
         {
-            //Create wall interface
+            FilteredElementCollector collector = new FilteredElementCollector(doc);
+            ElementClassFilter filter = new ElementClassFilter(typeof(WallType));
+            collector.WherePasses(filter);
 
-            //naming convention
-            //properties
-            //copy from
+            List<WallType> types = collector.Cast<WallType>().ToList();
+            WallType selectedWallType = types.Where(t=>t.FamilyName.Contains("Basic")).FirstOrDefault();
+            string name = "Nina - ";
+            DisplayUnit currentUnits = doc.DisplayUnitSystem;
+            string newWallTypeName = name + Math.Round(measure,2).ToString();
 
-            //Select it.
+            using (Transaction t = new Transaction(doc, "Create WallType"))
+            {
+                t.Start();
 
+                    WallType newWallType = selectedWallType.Duplicate(newWallTypeName) as WallType;
+                    CompoundStructure compoundStructure = newWallType.GetCompoundStructure();
+                    int layerIndex = compoundStructure.GetFirstCoreLayerIndex();
+                    IList<CompoundStructureLayer> csLayers = compoundStructure.GetLayers();
+                    foreach (CompoundStructureLayer csl in csLayers)
+                    {
+                        if (csl.Function.ToString() == "Structure")
+                        {
+                            compoundStructure.SetLayerWidth(layerIndex, measure);
+                        }
+                    }
+                    newWallType.SetCompoundStructure(compoundStructure);
+                t.Commit();
+            }
+
+        }
+
+        public static bool WallTypeExist(Document doc, double measure)
+        {
+            FilteredElementCollector collector = new FilteredElementCollector(doc);
+            ElementClassFilter filter = new ElementClassFilter(typeof(WallType));
+            collector.WherePasses(filter);
+
+            List<WallType> types = collector.Cast<WallType>().ToList();
+            double tolerance = 0.10;
+            double a = UnitUtils.Convert(tolerance, DisplayUnitType.DUT_METERS, DisplayUnitType.DUT_DECIMAL_FEET);
+
+            bool exist= types.Any(w => (w.Width - tolerance) <= measure && (w.Width + tolerance) >= measure);
+            return exist;
         }
 
         public static void WallSwitch(UIDocument uiDoc, Document doc, bool order)
