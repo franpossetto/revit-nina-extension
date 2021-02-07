@@ -8,5 +8,20 @@
     <Setting Name="Nina" Type="System.String" Scope="User">
       <Value Profile="(Default)">1.2.0</Value>
     </Setting>
+    <Setting Name="CreateWallType" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WallTypePrefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Nina_</Value>
+    </Setting>
+    <Setting Name="ViewRangeStep" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="WallTypeSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Tolerance" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

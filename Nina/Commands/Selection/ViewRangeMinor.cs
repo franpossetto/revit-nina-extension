@@ -32,7 +32,7 @@ namespace Nina.Selection
                 PlanViewRange viewRange = viewPlan.GetViewRange();
 
                 double currentOffset = viewRange.GetOffset(PlanViewPlane.CutPlane);
-                double offsetValue = 1;
+                double offsetValue = Settings.Default.ViewRangeStep;
 
                 if ((currentOffset - offsetValue) > viewRange.GetOffset(PlanViewPlane.BottomClipPlane))
                     viewRange.SetOffset(PlanViewPlane.CutPlane, (currentOffset - offsetValue));

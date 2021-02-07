@@ -16,8 +16,7 @@ namespace Nina.Revit
         {
 
             bool exist= FamilyType.WallTypeExist(doc, measure);
-            exist = true;
-            if (exist) FamilyType.CreateWall(uiDoc, doc, measure);
+            if (!exist) FamilyType.CreateWall(uiDoc, doc, measure);
 
             ElementClassFilter filter = new ElementClassFilter(typeof(WallType));
             FilteredElementCollector collector = new FilteredElementCollector(doc);
@@ -49,9 +48,11 @@ namespace Nina.Revit
             collector.WherePasses(filter);
 
             List<WallType> types = collector.Cast<WallType>().ToList();
-            WallType selectedWallType = types.Where(t=>t.FamilyName.Contains("Basic")).FirstOrDefault();
-            string name = "Nina - ";
+            WallType selectedWallType = types.Where(t => t.FamilyName == Settings.Default.WallTypeSelected).FirstOrDefault();
+            if (selectedWallType == null) selectedWallType = types.Where(t=>t.FamilyName.Contains("Basic")).FirstOrDefault();
             DisplayUnit currentUnits = doc.DisplayUnitSystem;
+
+            string name = Settings.Default.WallTypePrefix;
             string newWallTypeName = name + Math.Round(measure,2).ToString();
 
             using (Transaction t = new Transaction(doc, "Create WallType"))
@@ -66,9 +67,10 @@ namespace Nina.Revit
                     {
                         if (csl.Function.ToString() == "Structure")
                         {
-                            compoundStructure.SetLayerWidth(layerIndex, measure);
+                            if (csl.Width == newWallType.Width) compoundStructure.SetLayerWidth(layerIndex, measure);
+                            else compoundStructure.SetLayerWidth(layerIndex, measure - (newWallType.Width-csl.Width));
                         }
-                    }
+                }
                     newWallType.SetCompoundStructure(compoundStructure);
                 t.Commit();
             }
@@ -82,7 +84,7 @@ namespace Nina.Revit
             collector.WherePasses(filter);
 
             List<WallType> types = collector.Cast<WallType>().ToList();
-            double tolerance = 0.10;
+            double tolerance = Settings.Default.Tolerance;
             double a = UnitUtils.Convert(tolerance, DisplayUnitType.DUT_METERS, DisplayUnitType.DUT_DECIMAL_FEET);
 
             bool exist= types.Any(w => (w.Width - tolerance) <= measure && (w.Width + tolerance) >= measure);
