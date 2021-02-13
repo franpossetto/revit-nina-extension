@@ -156,6 +156,7 @@
     <Compile Include="Lib\FamilyType.cs" />
     <Compile Include="ExternalApplication.cs" />
     <Compile Include="Commands\Visibility\PointCloud\Hide.cs" />
+    <Compile Include="Lib\Units.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

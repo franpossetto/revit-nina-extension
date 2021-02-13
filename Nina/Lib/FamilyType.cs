@@ -50,11 +50,10 @@ namespace Nina.Revit
             List<WallType> types = collector.Cast<WallType>().ToList();
             WallType selectedWallType = types.Where(t => t.FamilyName == Settings.Default.WallTypeSelected).FirstOrDefault();
             if (selectedWallType == null) selectedWallType = types.Where(t=>t.FamilyName.Contains("Basic")).FirstOrDefault();
-            DisplayUnit currentUnits = doc.DisplayUnitSystem;
 
             string name = Settings.Default.WallTypePrefix;
-            string newWallTypeName = name + Math.Round(measure,2).ToString();
-
+            string m = Units.TransformValueIfNecessary(doc, measure);
+            string newWallTypeName = name + m;
             using (Transaction t = new Transaction(doc, "Create WallType"))
             {
                 t.Start();
