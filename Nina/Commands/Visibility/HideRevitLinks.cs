@@ -8,7 +8,7 @@ using Autodesk.Revit.UI;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Nina.Revit;
-using Logging.Core;
+using Nina.Logging;
 
 namespace Nina.Visibility
 {

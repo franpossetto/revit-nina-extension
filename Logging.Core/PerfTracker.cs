@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logging.Core
+namespace Nina.Logging
 {
     public class PerfTracker
     {

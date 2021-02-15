@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using Autodesk.Revit.UI;
-using Logging.Core;
+using Nina.Logging;
 using Nina.Revit;
 namespace Nina
 {

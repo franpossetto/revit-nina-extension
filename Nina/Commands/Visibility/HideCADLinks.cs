@@ -2,7 +2,7 @@
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using Logging.Core;
+using Nina.Logging;
 using Nina.Revit;
 using System;
 
