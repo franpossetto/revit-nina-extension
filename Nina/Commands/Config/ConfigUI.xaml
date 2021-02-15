@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Nina.Info"
-             mc:Ignorable="d" Height="462.333" Width="324.333"
+             mc:Ignorable="d" Height="462.333" Width="303.333"
              ResizeMode="NoResize"
              Title="Nina Settings"
              WindowStartupLocation="CenterScreen"
@@ -20,18 +20,14 @@
         <GroupBox Header="Walltype Selection" Height="195" VerticalAlignment="Top" Margin="10,20,10,0" Grid.ColumnSpan="2">
             <CheckBox Content="Create Walltype by tolerance" HorizontalAlignment="Left" Margin="12,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.134,0.167" IsChecked="True"/>
         </GroupBox>
-        <TextBox x:Name ="TextBox_tolerance" HorizontalAlignment="Left" Height="24" Margin="28,106,0,0" TextWrapping="Wrap" Text="1.00" VerticalAlignment="Top" Width="173" Grid.ColumnSpan="2"/>
-        <ComboBox Margin="139,106,28,0" VerticalAlignment="Top" Height="24" Grid.Column="1"/>
+        <TextBox x:Name ="TextBox_tolerance" Height="24" Margin="28,106,28,0" TextWrapping="Wrap" Text="1.00" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ComboBox_WallTypes" Margin="28,169,28,0" VerticalAlignment="Top" Height="24" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2"><Run Text="Select base "/><Run Text="WallT"/><Run Text="ype"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="28,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Tolerance" Grid.ColumnSpan="2"/>
         <GroupBox Header="View range" Height="114" VerticalAlignment="Top" Margin="10,241,10,0" Grid.ColumnSpan="2"/>
-        <TextBox x:Name ="TextBox_ViewRangeStep" HorizontalAlignment="Left" Height="24" Margin="21,301,0,0" TextWrapping="Wrap" Text="1.00" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="2"/>
+        <TextBox x:Name ="TextBox_ViewRangeStep" Height="24" Margin="21,301,28,0" TextWrapping="Wrap" Text="1.00" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="21,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="View Range Step" Grid.ColumnSpan="2"/>
-        <ComboBox Margin="139,301,28,0" VerticalAlignment="Top" Height="24" Grid.Column="1"/>
         <Button Content="OK" Margin="0,0,113,14" Click="Button_Ok" BorderBrush="#FF0078D7" BorderThickness="2" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="95" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="139,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Unit" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="139,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Unit" Grid.Column="1"/>
         <Button Content="Cancel" Margin="0,0,13,14" Click="Button_Cancel" Height="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="95" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="16,0,0,19" TextWrapping="Wrap" Text="Help..." Foreground="#FF0078D7" TextDecorations="Underline" Height="16" VerticalAlignment="Bottom"/>
 
