@@ -21,12 +21,8 @@ namespace Nina.Revit
         public static void ElementSwitch(UIDocument uiDoc, Document doc, bool order)
         {
 
-            #region Selection Stuff
-
             //Get Selected Elements IDs.
             ICollection<ElementId> selectedIds = uiDoc.Selection.GetElementIds();
-
-            #endregion
 
             Element element = doc.GetElement(selectedIds.FirstOrDefault());
             ElementId categoryId = element.Category.Id;
@@ -34,7 +30,6 @@ namespace Nina.Revit
 
             ElementId elementtypeid = element.GetTypeId();
             List<ElementId> elementTypes = element.GetValidTypes().ToList();
-
 
             List<ElementTypeSelector> etype = new List<ElementTypeSelector>();
             foreach (ElementId eid in elementTypes)
@@ -65,7 +60,6 @@ namespace Nina.Revit
                         if (index == -1)
                             index = elementTypesOrdered.Count() - 1;
                     }
-
                     n++;
                 }
             }

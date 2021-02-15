@@ -19,10 +19,10 @@ namespace Nina
                                       "WallType by Dimension", // name in Revit UI
                                       "Nina.Selection.WallByDimension"); //cmd
 
-            PushButtonData pipe_byDimension_data = Ribbon
-                .CreatePushButtonData("pipe_byDimension", // button name
-                                      "PipeType by Dimension", // name in Revit UI
-                                      "Nina.Selection.PipeByDimension"); //cmd
+            //PushButtonData pipe_byDimension_data = Ribbon
+            //    .CreatePushButtonData("pipe_byDimension", // button name
+            //                          "PipeType by Dimension", // name in Revit UI
+            //                          "Nina.Selection.PipeByDimension"); //cmd
 
             PushButtonData elementType_switch_up_data = Ribbon
                 .CreatePushButtonData("type_switch_up",
@@ -66,17 +66,17 @@ namespace Nina
             selectionPanel.AddSeparator();
             viewrange_plus_data.Image = Icons.viewrange_plus_16;
             viewrange_minor_data.Image = Icons.viewrange_minor_16;
+            wall_byDimension_data.Image = Icons.byDimension_16;
+
             IList<RibbonItem> revitselector_button = selectionPanel.AddStackedItems(viewrange_plus_data,
                                                                                     viewrange_minor_data,
-                                                                                    elementByDimension_data
+                                                                                    wall_byDimension_data
                                                                                     );
 
 
-            PulldownButton elementByDimension_pulldownbutton = revitselector_button[2] as PulldownButton;
-
-            elementByDimension_pulldownbutton.AddPushButton(wall_byDimension_data);
-            elementByDimension_pulldownbutton.AddPushButton(pipe_byDimension_data);
-            elementByDimension_pulldownbutton.Image = Icons.byDimension_16;
+            //PulldownButton elementByDimension_pulldownbutton = revitselector_button[2] as PulldownButton;
+            //elementByDimension_pulldownbutton.AddPushButton(wall_byDimension_data);
+            //elementByDimension_pulldownbutton.Image = Icons.byDimension_16;
         }
     }
 }
